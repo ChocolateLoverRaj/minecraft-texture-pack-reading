@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@types/jsonfile': ^6.0.0
   '@types/node': ^15.12.2
   '@typescript-eslint/eslint-plugin': '4'
   eslint: '7'
@@ -8,16 +9,19 @@ specifiers:
   eslint-plugin-import: '2'
   eslint-plugin-node: '11'
   eslint-plugin-promise: '4'
+  jsonfile: ^6.1.0
   make-empty-dir: ^2.0.0
   ts-node: ^10.0.0
   typescript: ^4.3.2
 
 dependencies:
+  jsonfile: 6.1.0
   make-empty-dir: 2.0.0
   ts-node: 10.0.0_e3fb3700f8b176f300f1b7e599dc9c29
   typescript: 4.3.2
 
 devDependencies:
+  '@types/jsonfile': 6.0.0
   '@types/node': 15.12.2
   '@typescript-eslint/eslint-plugin': 4.26.1_eslint@7.28.0+typescript@4.3.2
   eslint: 7.28.0
@@ -108,6 +112,12 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
+    dev: true
+
+  /@types/jsonfile/6.0.0:
+    resolution: {integrity: sha512-mUHbRieyluPtL3c466K7oUGua1lAVlz45PV4U3bHs5CXdBlDIeXJI5xQXa6IZYnrgmcJzJp/CiTZB4zfShAi6w==}
+    dependencies:
+      '@types/node': 15.12.2
     dev: true
 
   /@types/node/15.12.2:
@@ -883,7 +893,6 @@ packages:
 
   /graceful-fs/4.2.6:
     resolution: {integrity: sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==}
-    dev: true
 
   /has-bigints/1.0.1:
     resolution: {integrity: sha512-LSBS2LjbNBTf6287JEbEzvJgftkF5qFkmCo9hDRpAzKhUOlJ+hx8dd4USs00SgsUNwc4617J9ki5YtEClM2ffA==}
@@ -1070,6 +1079,14 @@ packages:
     dependencies:
       minimist: 1.2.5
     dev: true
+
+  /jsonfile/6.1.0:
+    resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
+    dependencies:
+      universalify: 2.0.0
+    optionalDependencies:
+      graceful-fs: 4.2.6
+    dev: false
 
   /levn/0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
@@ -1627,6 +1644,11 @@ packages:
       has-symbols: 1.0.2
       which-boxed-primitive: 1.0.2
     dev: true
+
+  /universalify/2.0.0:
+    resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
+    engines: {node: '>= 10.0.0'}
+    dev: false
 
   /uri-js/4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
