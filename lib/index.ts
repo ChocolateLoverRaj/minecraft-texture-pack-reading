@@ -148,6 +148,16 @@ const categories: Category[] = [{
     'sweet_berries',
     'tropical_fish'
   ]
+}, {
+  name: 'stick',
+  model: {
+    parent: 'minecraft:item/handheld',
+    textures: {
+      layer0: `minecraft:${customTexturePack}/stick`
+    }
+  },
+  texture: join(resDir, 'stick.png'),
+  items: ['stick', 'blaze_rod']
 }];
 
 (async () => {
