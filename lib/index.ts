@@ -24,16 +24,33 @@ interface Category {
   model: object
 }
 
+const itemModel = {
+  parent: 'minecraft:item/handheld',
+  textures: {
+    layer0: `minecraft:${customTexturePack}/tool`
+  }
+}
 const categories: Category[] = [{
   name: 'tool',
-  model: {
-    parent: 'minecraft:item/handheld',
-    textures: {
-      layer0: `minecraft:${customTexturePack}/tool`
-    }
-  },
+  model: itemModel,
   texture: join(resDir, 'tool.png'),
   items: multiplyArrays(toolTypes, tools).map(([type, tool]) => `${type}_${tool}`)
+}, {
+  name: 'bucket',
+  model: itemModel,
+  texture: join(resDir, 'bucket.png'),
+  items: [
+    'bucket',
+    'water_bucket',
+    'lava_bucket',
+    'powder_snow_bucket',
+    'milk_bucket',
+    'pufferfish_bucket',
+    'salmon_bucket',
+    'cod_bucket',
+    'tropical_fish_bucket',
+    'axolotl_bucket'
+  ]
 }];
 
 (async () => {
