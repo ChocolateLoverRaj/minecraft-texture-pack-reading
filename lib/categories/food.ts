@@ -2,9 +2,7 @@ import { Category } from '../Category'
 import customTexturePack from '../customTexturePack'
 import resDir from '../resDir'
 import { join } from 'path'
-import MinecraftData from 'minecraft-data'
-
-const data = MinecraftData('1.16.5')
+import minecraftData from '../minecraftData'
 
 const foodCategory: Category = {
   name: 'food',
@@ -15,7 +13,7 @@ const foodCategory: Category = {
     }
   },
   texture: join(resDir, 'food.png'),
-  items: data.foodsArray
+  items: minecraftData.foodsArray
     .map(({ name }) => name)
     .filter(name => name !== 'honey_bottle')
 }
