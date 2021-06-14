@@ -66,7 +66,7 @@ const buildingBlockCategory: Category = {
     'chiseled_sandstone',
     'cut_sandstone',
     ...colors.map(color => `${color}_wool`),
-    'smooth_quartz_block',
+    'smooth_quartz',
     'smooth_red_sandstone',
     'smooth_sandstone',
     'smooth_stone',
