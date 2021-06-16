@@ -5,7 +5,7 @@ import multiplyArrays from '../multiplyArrays'
 import resDir from '../resDir'
 
 const toolTypes = ['wooden', 'stone', 'golden', 'iron', 'diamond', 'netherite'] as const
-const tools = ['shovel', 'pickaxe', 'axe', 'hoe'] as const
+const tools = ['shovel', 'pickaxe', 'axe', 'hoe', 'sword'] as const
 
 const toolCategory: Category = {
   name: 'tool',
