@@ -28,7 +28,9 @@ const oreIngotCategory: Category = {
     'gold_ingot',
     'netherite_ingot',
     'netherite_scrap',
-    'redstone'
+    'redstone',
+    'gold_nugget',
+    'iron_nugget'
   ]
 }
 
