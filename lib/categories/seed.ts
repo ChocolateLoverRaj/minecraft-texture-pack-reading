@@ -18,7 +18,15 @@ const seedCategory: Category = {
     'melon_seeds',
     'beetroot_seeds',
     'cocoa_beans',
-    'nether_wart'
+    'nether_wart',
+    ...[
+      'oak',
+      'spruce',
+      'birch',
+      'jungle',
+      'acacia',
+      'dark_oak'
+    ].map(tree => `${tree}_sapling`)
   ]
 }
 
