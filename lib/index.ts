@@ -13,6 +13,7 @@ import foodCategory from './categories/food'
 import stickCategory from './categories/stickCategory'
 import buildingBlockCategory from './categories/buildingBlock'
 import slabCategory from './categories/slab'
+import stairsCategory from './categories/stairs'
 
 const distDir = join(__dirname, '../dist')
 const mcMetaFile = 'pack.mcmeta'
@@ -31,7 +32,8 @@ const categories: Category[] = [
   foodCategory,
   stickCategory,
   buildingBlockCategory,
-  slabCategory
+  slabCategory,
+  stairsCategory
 ];
 
 (async () => {
