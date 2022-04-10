@@ -4,7 +4,9 @@
     "chainmail",
     "chestplate",
     "deepslate",
+    "firstperson",
     "glowstone",
+    "lefthand",
     "mcmeta",
     "minecraft",
     "netherite",
@@ -14,6 +16,8 @@
     "porkchop",
     "prismarine",
     "pufferfish",
-    "purpur"
+    "purpur",
+    "righthand",
+    "thirdperson"
   ]
 }

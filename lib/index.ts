@@ -15,6 +15,7 @@ import buildingBlockCategory from './categories/buildingBlock'
 import slabCategory from './categories/slab'
 import stairsCategory from './categories/stairs'
 import seedCategory from './categories/seed'
+import bowCategory from './categories/bow'
 
 const distDir = join(__dirname, '../dist')
 const mcMetaFile = 'pack.mcmeta'
@@ -35,7 +36,8 @@ const categories: Category[] = [
   buildingBlockCategory,
   slabCategory,
   stairsCategory,
-  seedCategory
+  seedCategory,
+  bowCategory
 ];
 
 (async () => {
@@ -54,8 +56,9 @@ const categories: Category[] = [
             }, { spaces: 2 }))))))
         ])),
       mkdir(customTexturesDir, { recursive: true }).then(async () =>
-        await Promise.all(categories.map(async ({ name, texture }) =>
-          await copyFile(texture, join(customTexturesDir, `${name}.png`)))))
+        await Promise.all(categories.map(async ({ name, texture }) => await Promise.all(
+          (typeof texture === 'string' ? [texture] : texture).map(async texture =>
+            await copyFile(texture, join(customTexturesDir, `${name}.png`)))))))
     ]))
   ])
 })()
